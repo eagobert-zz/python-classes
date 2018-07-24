@@ -32,15 +32,19 @@ class Company(object):
 
 #Create a company, and three employees, and then assign the employees to the company. (Using the above example)
 
-NSS = Company("Nashville Software School", "April 1, 2013")
-NSS.set_employee({'name':'Steve Brownlee', 'title':'Lead Instructor', 'start_Date':'July 24, 2018'})
-NSS.set_employee({'name': 'Joe Shepherd', 'title': 'Instructor', 'start_date': 'July 24, 2018'})
-NSS.set_employee({'name': 'Kimmie Bird', 'title': 'Junior Instructor', 'start_date': 'July 24, 2018'})
+if __name__ == '__main__':
+    #Create a company
+    NSS = Company("Nashville Software School", "April 1, 2013")
 
-print(NSS.company_name)
-print(NSS.date_founded)
-print(NSS.employees)
+    #Create employees
+    NSS.set_employee({'name':'Steve Brownlee', 'title':'Lead Instructor', 'start_Date':'July 24, 2018'})
+    NSS.set_employee({'name': 'Joe Shepherd', 'title': 'Instructor', 'start_date': 'July 24, 2018'})
+    NSS.set_employee({'name': 'Kimmie Bird', 'title': 'Junior Instructor', 'start_date': 'July 24, 2018'})
+
+    print(NSS.company_name)
+    print(NSS.date_founded)
+    print(NSS.employees)
 
 #Consider the concept of aggregation, and modify the Company class so that you assign employees to a company.
 
-#Comments:  See file employees_aggregation.py for answer
+    #Comment:  See file employees_aggregation.py for answer
